@@ -34,10 +34,6 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
-UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO",
-    "https://github.com/AnonymousR1025/AnonXMusic",
-)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
