@@ -6,7 +6,7 @@ import config
 from AnonX import app
 
 
-def start_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
+def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
