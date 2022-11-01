@@ -22,9 +22,9 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "300")
 )
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "NIDHI")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ​")
 
 OWNER_ID = list(
     map(int, getenv("OWNER_ID", "1356469075").split())
@@ -268,3 +268,5 @@ if not MUSIC_BOT_NAME.isascii():
     print(
         "[KYA RE LAVDE] - BOHOT FONT LAGANE KA SHAUKH HAI. JAA PHIR ANONYMOUS KO APNI CHUMT DEKE AA"
     )
+
+    
