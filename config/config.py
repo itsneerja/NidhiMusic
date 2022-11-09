@@ -27,7 +27,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ​")
 
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1356469075").split())
+    map(int, getenv("OWNER_ID", "1156719022").split())
 )
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -266,7 +266,7 @@ if TELEGRAM_VIDEO_URL:
 
 if not MUSIC_BOT_NAME.isascii():
     print(
-        "[KYA RE LAVDE] - BOHOT FONT LAGANE KA SHAUKH HAI. JAA PHIR ANONYMOUS KO APNI CHUMT DEKE AA"
+        "[KYA RE LAVDE] - BOHOT FONT LAGANE KA SHAUKH HAI."
     )
 
     
