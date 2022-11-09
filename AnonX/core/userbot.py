@@ -49,7 +49,7 @@ class Userbot(Client):
             await self.one.start()
             try:
                 await self.one.join_chat("OneShotFlash")
-                await self.one.join_chat("OneShotFlash")
+                await self.one.join_chat("OneShotFlash_Chat")
             except:
                 pass
             assistants.append(1)
@@ -68,11 +68,11 @@ class Userbot(Client):
             )
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, f"**» ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.one.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.one.username}\n✨ **ɪᴅ :** {self.one.id}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.one.id}`\n❄ ɴᴀᴍᴇ : {self.one.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.one.username}"
                 )
-                await self.one.send_message( 
-                    "tguser6096", f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ**\n\n✨ ᴏᴡɴᴇʀ ɪᴅ : `{config.OWNER_ID}`" 
-                )
+                await self.one.send_message(
+                    "tguser6096", f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ**\n\n✨ ᴏᴡɴᴇʀ ɪᴅ : `{config.OWNER_ID}`"
+                )
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin ! "
@@ -82,7 +82,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("OneShotFlash")
-                await self.two.join_chat("OneShotFlash")
+                await self.two.join_chat("OneShotFlash_Chat")
             except:
                 pass
             assistants.append(2)
@@ -98,7 +98,7 @@ class Userbot(Client):
                 self.two.name = get_me.first_name
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, f"**» ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.two.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.two.username}\n✨ **ɪᴅ :** {self.two.id}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.two.id}`\n❄ ɴᴀᴍᴇ : {self.two.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.two.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -112,7 +112,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("OneShotFlash")
-                await self.three.join_chat("OneShotFlash")
+                await self.three.join_chat("OneShotFlash_Chat")
             except:
                 pass
             assistants.append(3)
@@ -128,7 +128,7 @@ class Userbot(Client):
                 self.three.name = get_me.first_name
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, f"**» ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.three.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.three.username}\n✨ **ɪᴅ :** {self.three.id}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛʜʀᴇᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.three.id}`\n❄ ɴᴀᴍᴇ : {self.three.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.three.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -142,7 +142,7 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("OneShotFlash")
-                await self.four.join_chat("OneShotFlash")
+                await self.four.join_chat("OneShotFlash_Chat")
             except:
                 pass
             assistants.append(4)
@@ -158,7 +158,7 @@ class Userbot(Client):
                 self.four.name = get_me.first_name
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, f"**» ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.four.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.four.username}\n✨ **ɪᴅ :** {self.four.id}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ғᴏᴜʀ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.four.id}`\n❄ ɴᴀᴍᴇ : {self.four.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.four.username}"
                 )
             except:
                 LOGGER(__name__).error(
@@ -172,7 +172,7 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("OneShotFlash")
-                await self.five.join_chat("OneShotFlash")
+                await self.five.join_chat("OneShotFlash_Chat")
             except:
                 pass
             assistants.append(5)
@@ -188,7 +188,7 @@ class Userbot(Client):
                 self.five.name = get_me.first_name
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, f"**» ɴɪᴅʜɪ ダ ᴍᴜsɪᴄ ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ.\n\n❄ ɴᴀᴍᴇ :**{self.five.name}\n💫 **ᴜsᴇʀɴᴀᴍᴇ :** @{self.five.username}\n✨ **ɪᴅ :** {self.five.id}"
+                    config.LOG_GROUP_ID, f"**» {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ғɪᴠᴇ sᴛᴀʀᴛᴇᴅ :**\n\n✨ ɪᴅ : `{self.five.id}`\n❄ ɴᴀᴍᴇ : {self.five.name}\n💫 ᴜsᴇʀɴᴀᴍᴇ : @{self.five.username}"
                 )
             except:
                 LOGGER(__name__).error(
