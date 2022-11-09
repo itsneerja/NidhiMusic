@@ -63,7 +63,7 @@ async def init():
     except:
         pass
     await Anon.decorators()
-    LOGGER("AnonX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @itsneerja)
+    LOGGER("AnonX").info("Music Bot Started Successfully, Now Gib your girlfriend chumt to @anonymous_was_bot)
     await idle()
 
 
