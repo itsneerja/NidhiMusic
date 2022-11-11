@@ -20,7 +20,9 @@
 <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/movieverseofc/AnonXMusic"><img src="https://img.shields.io/badge/Deploy%20On%20Okteto-black?style=for-the-badge&logo=Okteto" width="220" height="38.45"/></a></p>
 
 <h3 align="left">
- Deploy On Vps : git clone https://itsneerja/NidhiMusic /n bash setup
+ Deploy On Vps : git clone https://itsneerja/NidhiMusic
+h3 align="left">
+ bash setup
 
 <h3 align="center">
     ─「 sᴜᴩᴩᴏʀᴛ 」─
