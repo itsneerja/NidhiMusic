@@ -82,7 +82,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("OneShotFlash")
-                await self.two.join_chat("OneShotFlash_Chat")
+                await self.two.join_chat("DevilsHeavenMF")
             except:
                 pass
             assistants.append(2)
@@ -112,7 +112,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("OneShotFlash")
-                await self.three.join_chat("OneShotFlash_Chat")
+                await self.three.join_chat("DevilsHeavenMF")
             except:
                 pass
             assistants.append(3)
@@ -142,7 +142,7 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("OneShotFlash")
-                await self.four.join_chat("OneShotFlash_Chat")
+                await self.four.join_chat("DevilsHeavenMF")
             except:
                 pass
             assistants.append(4)
@@ -172,7 +172,7 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("OneShotFlash")
-                await self.five.join_chat("OneShotFlash_Chat")
+                await self.five.join_chat("DevilsHeavenMF")
             except:
                 pass
             assistants.append(5)
