@@ -1,33 +1,25 @@
 from typing import Union
 
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
-from AnonX import app
 
 
 def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥺 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩ ʙᴀʙʏ 🥺",
+                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ👀",
+                text="ʜᴇʟᴩ",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs👀", callback_data="settings_helper"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🌹ᴏᴡɴᴇʀ🌹", user_id=OWNER),
-            InlineKeyboardButton(
-                text="❤️sᴜᴩᴩᴏʀᴛ❤️", url=f"{config.SUPPORT_GROUP}"
+                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
             ),
         ],
      ]
@@ -38,26 +30,25 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ🥺",
+                text="•ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ•",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-            ),
+            )
         ],
         [
             InlineKeyboardButton(
-                text="👀ʜᴇʟᴩ👀", callback_data="settings_back_helper"
+                text="🍂ᴄᴏᴍᴍᴀɴᴅs🍂", callback_data="settings_back_helper"
             ),
-        ],
-        [
-            InlineKeyboardButton(text="🌹ᴏᴡɴᴇʀ🌹", user_id=OWNER),
             InlineKeyboardButton(
-                text="❤️sᴜᴩᴩᴏʀᴛ❤️", url=f"{config.SUPPORT_GROUP}"
-            ),
+                text="🥀 ᴅᴇᴠᴇʟᴏᴘᴇʀ 🥀", user_id=OWNER
+            )
         ],
         [
             InlineKeyboardButton(
-                    text="💘sᴏᴜʀᴄᴇ💘", url=f"https://github.com/itsneerja/NidhiMusic"
-                ),
+                text="💔sᴜᴩᴩᴏʀᴛ💔", url=config.SUPPORT_GROUP
+            ),
+            InlineKeyboardButton(
+                text="✨ sᴏᴜʀᴄᴇ ✨", url=f"https://github.com/itsneerja/NidhiMusic"
+            )
         ],
      ]
     return buttons
-
