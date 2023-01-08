@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID","10330886"))
+API_HASH = getenv("API_HASH","8b88ae0d20e10c5b5c87f4d115fb6d7b")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","5301190359:AAHmawrPFwU5UftV_DBjtaO2ja7aepYRQBI")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ɴɪᴅʜɪ ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "=mongodb+srv://pankajsain:pankaj9024@cluster0.fdc33h6.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1001885840624"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝄟🦋⃟≛⃝🇦‌ꪜ𝙴Й₲𝙴ℝ𝚂🦋⃟ ♡︎乛🇲‌🇺‌🇸‌🇮‌🇨‌")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5167919285").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "1798996963").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -25,10 +25,10 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/itsneerja/NidhiMusic
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/DevilsHeavenMF")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/HNYPROBOY")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/HNYPROBOY")
 
-SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
+SUPPORT_HEHE = SUPPORT_GROUP.split("https://t.me/HNYPROBOY")[1]
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC_SMpIkX3-DCln8URSk5hAit0-_DYxTDGhaR2_IgmUeB9KrsCdMXUaBS1d5QiHZKnPQDEUoD_q-KlPTte4v-wgMTQnRaqRmFtjfI0tMDWAmB-pUErihJ4gbgVP95Hxlp-KsV0I7hueWn3GKLJlHojj3e5sGfAAh3t2BEB4ywP4XpPIIzgvSyewELWdE4d4MAp1irMH-9piHHjM0n-mkgbFyCPJlwDvBldEY-_iYBzO-Tf36YhJaoy9sus4ceyddrq9gjNluLI3cL0BhnBkSEbq066YmOqBHnMRUGubCYKPlMKBPsIBoV0IW1b2J0iT2G8-_eUvu3aG5Y16vSh9zJ0AazqD4wA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/544ffbb6532ab48738625.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/544ffbb6532ab48738625.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
@@ -121,7 +121,7 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
 
 
 if UPSTREAM_REPO:
-    if not re.match("(?:http|https)://", UPSTREAM_REPO):
+    if not re.match("(?:http|https)://", "https://github.com/itsneerja/NidhiMusic"):
         print(
             "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
         )
@@ -129,10 +129,10 @@ if UPSTREAM_REPO:
 
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
-        if not re.match("(?:http|https)://", PING_IMG_URL):
+        if not re.match("(?:http|https)://", " https://te.legra.ph/file/544ffbb6532ab48738625.jpg"):
             PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
 
 if START_IMG_URL:
-    if START_IMG_URL != "assets/Ping.jpeg":
+    if START_IMG_URL != "https://te.legra.ph/file/544ffbb6532ab48738625.jpg":
         if not re.match("(?:http|https)://", START_IMG_URL):
             START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
