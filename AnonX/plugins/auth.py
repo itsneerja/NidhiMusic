@@ -1,5 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import Message
+from pyrogram.enums import ParseMode
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
@@ -131,7 +132,7 @@ async def unauthusers(client, message: Message, _):
     & ~filters.edited
     & ~BANNED_USERS
 )
-async def authusers(client, message: Message, _):
+async def authusers(_, message: Message):
     _playlist = await get_authuser_names(message.chat.id)
     if not _playlist:
         return await message.reply_text(_["setting_5"])
@@ -145,12 +146,11 @@ async def authusers(client, message: Message, _):
             admin_id = _note["admin_id"]
             admin_name = _note["admin_name"]
             try:
-                user = await app.get_users(user_id)
-                user = user.first_name
+                user = (await app.get_users(user_id)).first_name
                 j += 1
-            except Exception:
+            except:
                 continue
-            text += f"{j}➤ {user}[`{user_id}`]\n"
-            text += f"   {_['auth_8']} {admin_name}[`{admin_id}`]\n\n"
+            text += f"{j}➤ {user}[<code>{user_id}</code>]\n"
+            text += f"   <b>↬ ᴀᴅᴅᴇᴅ ʙʏ :</b> {admin_name}[<code>{admin_id}</code>]\n\n"
         await mystic.delete()
-        await message.reply_text(text)
+        await message.reply_text(text, parse_mode=ParseMode.HTML)
