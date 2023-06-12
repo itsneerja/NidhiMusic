@@ -135,11 +135,11 @@ async def unauthusers(client, message: Message, _):
 async def authusers(_, message: Message):
     _playlist = await get_authuser_names(message.chat.id)
     if not _playlist:
-        return await message.reply_text(_["setting_5"])
+        return await message.reply_text("ɴᴏ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.")
     else:
         j = 0
-        mystic = await message.reply_text(_["auth_6"])
-        text = _["auth_7"]
+        mystic = await message.reply_text("» ғᴇᴛᴄʜɪɴɢ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ʟɪsᴛ...")
+        text = f"» ʟɪsᴛ ᴏғ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜsᴇʀs ɪɴ {message.chat.title} :\n\n"
         for note in _playlist:
             _note = await get_authuser(message.chat.id, note)
             user_id = _note["auth_user_id"]
