@@ -1,6 +1,6 @@
 from pyrogram import filters
 from pyrogram.types import Message
-from pyrogram.enums import ParseMode
+##from pyrogram.enums import ParseMode
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
@@ -153,4 +153,4 @@ async def authusers(_, message: Message):
             text += f"{j}➤ {user}[<code>{user_id}</code>]\n"
             text += f"   <b>↬ ᴀᴅᴅᴇᴅ ʙʏ :</b> {admin_name}[<code>{admin_id}</code>]\n\n"
         await mystic.delete()
-        await message.reply_text(text, parse_mode=ParseMode.HTML)
+        await message.reply_text(text)
