@@ -12,7 +12,6 @@ from config import OWNER_ID
 from strings import get_command, get_string
 from AnonX import Telegram, YouTube, app
 from AnonX.misc import SUDOERS, _boot_
-from AnonX.plugins.playlist import del_plist_msg
 from AnonX.plugins.sudoers import sudoers_list
 from AnonX.utils.database import (add_served_chat,
                                        add_served_user,
