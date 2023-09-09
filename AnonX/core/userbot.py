@@ -49,7 +49,7 @@ class Userbot(Client):
             await self.one.start()
             try:
                 await self.one.join_chat("VpsPortal")
-                await self.one.join_chat("NidhiStatus")
+                await self.one.join_chat("NidhiAssociation")
                 await self.one.join_chat("ExtremeFlash")
             except:
                 pass
@@ -81,7 +81,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("VpsPortal")
-                await self.two.join_chat("NidhiStatus")
+                await self.two.join_chat("NidhiAssociation")
                 await self.two.join_chat("ExtremeFlash")
             except:
                 pass
@@ -113,7 +113,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("VpsPortal")
-                await self.three.join_chat("NidhiStatus")
+                await self.three.join_chat("NidhiAssociation")
                 await self.three.join_chat("ExtremeFlash")
             except:
                 pass
@@ -145,7 +145,7 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("VpsPortal")
-                await self.four.join_chat("NidhiStatus")
+                await self.four.join_chat("NidhiAssociation")
                 await self.four.join_chat("ExtremeFlash")
             except:
                 pass
@@ -177,7 +177,7 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("VpsPortal")
-                await self.five.join_chat("NidhiStatus")
+                await self.five.join_chat("NidhiAssociation")
                 await self.five.join_chat("ExtremeFlash")
             except:
                 pass
